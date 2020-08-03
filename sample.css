@@ -1,0 +1,13 @@
+
+.container {
+  padding-bottom: 25px;
+  width: 65%;
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.single-item img{
+  width: 100%;
+}
