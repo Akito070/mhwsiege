@@ -21,8 +21,8 @@ a {
 }
 
 .top-wrapper {
-  padding: 400px 0 100px 0;
-  background-image: url("images/cod.jpg.pagespeed.ce.MmfNz6PYD9.jpg");
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
   background-size: cover;
   color: white;
   text-align: center;
@@ -38,70 +38,86 @@ a {
   opacity: 0.7;
 }
 
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
 
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
 
 header {
-  height: 80px;
+  height: 65px;
   width: 100%;
-  background-color: black;
+  background-color: rgba(34, 49, 52, 0.9);
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
 
 .header-left {
   float: left;
 }
 
-#sidebar{
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background-color: black;
-  left: -200px;
-  transition: all 500ms linear;
+.header-right {
+  float: right;
+  margin-right: -25px;
 }
 
-#sidebar.active{
-  left: 0px;
-}
-
-.space-li{
-  margin-top:80px;
-  border-top:  1px solid;
-}
-#sidebar ul li{
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
   color: white;
-  list-style: none;
-  padding: 25px 0px;
-  border-bottom: 1px solid;
-  text-align: center;
-  font-size: 20px;
-}
-
-#sidebar .toggle-btn{
-  position: absolute;
-  left: 230px;
-  top: 20px;
-}
-
-#sidebar .toggle-btn span{
   display: block;
-  width: 30px;
-  height: 5px;
-  background: white;
-  margin: 7px 0px;
+  float: left;
+  transition: all 0.5s;
 }
-/*menu-bar*/
 
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
-
-.center-wrapper {
-  padding-bottom:70%;
+.lesson-wrapper {
+  padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #DCDCDC;
+  background-color: #f7f7f7;
   text-align: center;
 }
 
@@ -115,229 +131,76 @@ header {
   font-weight: normal;
 }
 
-.center {
+.lesson {
   float: left;
   width: 25%;
-  padding-bottom: 10%;
- 
-  
 }
 
-.center-icon {
+.lesson-icon {
   position: relative;
 }
 
-.center-icon img{
-  width:220px;
-  height:250px;
-}
-
-.center-icon p {
+.lesson-icon p {
   position: absolute;
-  top: 100%;
-  text-align: center;
-  font-size: 18px;
-  color: #404040;
-  left: 22%;
+  top: 44%;
+  width: 100%;
+  color: white;
 }
 
 .text-contents {
   width: 80%;
-  display: none;
-  margin-top: 65px;
-  margin-bottom: 80px;
+  display: inline-block;
+  margin-top: 15px;
   font-size: 13px;
   color: #b3aeb5;
-  text-align: justify;
- 
-}
- /* ここに.text-activeのCSSを書いてください */
-.text-active{
-  display: inline-block;
- 
 }
 
-/*contact*/
-.contact-section {
-  color: #6a6a6a;
+.heading h3 {
+  font-weight: normal;
 }
 
-.contact-section-inner {
-  padding-bottom: 90px;
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
-.contact-section h3, .contact-section h4 {
-  color: #404040;
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
 }
 
-.contact-section h3 {
-  font-size: 22px;
-  padding-top: 10px;
-}
-
-.contact-section h4 {
-  font-size: 22px;
-  padding-bottom: 10px;
-}
-
-.contact-form input[type="text"], .contact-form textarea {
-  margin: 0;
-  padding: 0 10px;
-  vertical-align: middle;
-  background: rgba(0, 0, 0, 0.08);
-  border: none;
-  width: 85%;
-  color: #202020;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 0;
+.message:active {
+  position: relative;
+  top: 7px;
   box-shadow: none;
-  transition: all .3s;
-  margin-bottom: 10px;
-  padding: 15px;
 }
 
-textarea {
-  height: 150px;
-}
-
-.contact-form {
-  display: inline-block;
-  vertical-align: top;
-  width: 58%;
-}
-
-
-
-
-#btn-contact[type=button]{
-  font-family: 'Dosis', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  background: #5983ff;
-  border: 1px solid #5979ff;
-  color: white;
-  box-shadow: inset 0 1px 0 #5867ed;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  transition: all .3s;
-  margin: 10px 0;
-  padding: 15px 35px;
-  width: 30%;
-}
-
-#contact-form .focused{
-	background-color:#f0f8ff;
-}
-
-#coment{
-  text-align: center;
-  font-size: 20px;
-}
-#target{
-  margin: 60px 350px;
-  padding: 30px;
-  text-align: justify;
-  font-size: 16px;
- 
-}
-.contact-about {
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-}
-
-.faq-wrapper {
-  background-color: #e6ecf0;
-  text-align: center;
-  padding-bottom: 40px;
-  color: #5f5d60;
-}
-
-.heading h2{
-    padding-top: -50px;
-    padding-bottom: -80px;
-    text-align: center;
-    font-size: 32px;
-}
-
-#faq-list {
-  width: 500px;
-  margin: -80px auto;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  list-style: none;
-}
-
-.faq-list-item {
-  margin:10px;
-  border-bottom:1px solid #ccc;
-  position:relative;
-  cursor:pointer;
-  text-align: left;
-}
-
-.faq-list-item h3 {
-  font-size: 14px;
-}
-
-.faq-list-item span {
-  position:absolute;
-  top:0;
-  right:5px;
-  color:#ccc;
-  font-size:13px;
-}
-
-
-
-.answer {
-  font-size: 12px;
-  padding: 5px 0px;
-  margin-bottom: 15px;
-  display:none;
-}
-
-
-footer {
-  color: white;
-  background-color:black;
-  height: 150px;
-}
-
-.social-icon {
-  text-align: center;
-  float: right;
-  vertical-align: top;
-  display: inline-block;
-  background: white;
-  width: 60px;
-  height: 50px;
-  padding-top: 10px;
-  border-radius: 50%;
-  color: black;
-  font-size: 24px;
-  margin: 0 15px;
-  margin-top: 45px;
-}
-
-.social-icon:hover{
-  color: #e3e3e3;
-  background-color: rgb(94, 144, 255);
-}
-
-.copyright {
-  float: left;
-}
-
-.copyright img{
-  position: absolute;
-  padding-top: 28px;
+footer img {
   width: 125px;
 }
 
-.copyright p{
-  color: white;
-  padding-top: 95px;
-  font-size: 15px;
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* -------------------- CSSはここから追加していきましょう！ -------------------- */
+
+.menu-icon{
+  color:white;
+  float:right;
+  font-size:25px;
+  padding:21px 0;
+  display:none;
+}
+.clear{
+  clear:left;
 }
