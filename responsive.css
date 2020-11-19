@@ -1,60 +1,42 @@
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
-  .top-wrapper h1{
-    font-size:32px;
+    .top-wrapper h1{
+      font-size:32px;
+    }
+    .heading h2{
+      font-size:20px;
+    }
+    .icons{
+      width:50%;
+      margin-bottom:50px;
+    }
+    footer{
+      text-align:center;
+    }
   }
-  .heading h2{
-    font-size:20px;
-  }
-  .center{
-    width:50%;
-    margin-bottom:20px;
-  }
-
-  .center-wrapper {
-    padding-bottom:240%;
   
-  }
-  .contact-form{
-    width:100%;
-  }
+  /* モバイル向けレイアウト */
+  @media all and (max-width: 670px) {
+    .header-right{
+      display:none; 
+    }
+    .menu-icon{
+      display:block;
+    }
+    .top-wrapper .btn{
+      width:100%;
+    }
+    .top-wrapper{
+      text-align:left;
+    }
+    .top-wrapper h1{
+      font-size:24px;
+    }
+    .top-wrapper p{
+      font-size:14px;
+    }
+    .icons{
+      width:100%;
+    }
 
-  .contact-about{
-    width:100%;
   }
-  footer{
-    text-align:center;
-  }
-}
-
-/* モバイル向けレイアウト */
-@media all and (max-width: 670px) {
-
-  .top-wrapper{
-    text-align:left;
-  }
-  .top-wrapper h1{
-    font-size:24px;
-  }
-  .top-wrapper p{
-    font-size:14px;
-  }
-  .center{
-    width:50%;
-    margin-bottom:20px;
-  }
-
-  .center-wrapper {
-    padding-bottom:240%;
-  
-  }
-
-  .contact-form{
-    width:100%;
-  }
-
-  .contact-about{
-    width:100%;
-  }
-
-}
